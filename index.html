@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Create your own resume using various HTML tags, tables, images, fonts, colours.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+    body{
+        background-image: url(/intro-to-html/images.html/images/background-menu-for-restaurant-cafe-bar-vector-2255758.jpg);
+        background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-attachment: fixed; /* Keep the image fixed while scrolling */
+   position: sticky;
+    }
+    .heading{
+    text-align: center;
+    text-decoration: underline;
+    border: solid rgb(207, 207, 207);
+    background-color: rgb(240, 240, 240);
+    color:black;
+    
+    padding-left: 50%;
+    padding-right: 50%;
+    
+}
+
+.mainbody {
+    padding-top: 50px; /* Adjust this value to match the height of your fixed header */
+}
+
+/* Other styles remain the same */
+
+.objective{
+    text-decoration:underline;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .span-objective{
+    text-align:justify;
+    font-size: small;
+ }
+
+.profile-pic{
+    height: 200px;
+    width: 150px;
+    
+    border: solid;
+}
+.extra-activity {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  color: #333; /* Text color */
+  text-decoration: none; /* Remove default underline */
+}
+
+.extra-activity::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of underline */
+  background-color: rgb(0, 0, 0); /* Color of underline */
+  transition: width 0.5s ease; /* Smooth transition */
+}
+
+.extra-activity:hover::before {
+  width: 100%; /* Slide to full width on hover */
+  
+}
+ 
+
+ .Personal-information
+ {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+  display: inline-block;
+  color: #333; /* Text color */
+  text-decoration: none; /* Remove default underline */
+}
+
+.Personal-information::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of underline */
+  background-color: rgb(0, 0, 0); /* Color of underline */
+  transition: width 0.5s ease; /* Smooth transition */
+}
+
+.Personal-information:hover::before {
+  width: 100%; /* Slide to full width on hover */
+  
+}
+ 
+ .personal-info{
+    margin-bottom: 0px;
+ }
+ .education{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+  display: inline-block;
+  color: #333; /* Text color */
+  /*text-decoration: none; /* Remove default underline */
+}
+
+.education::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of underline */
+  background-color: rgb(255, 255, 255); /* Color of underline */
+  transition:width 0.5s ease; /* Smooth transition */
+}
+
+.education::before {
+  width: 100%; /* Slide to full width on hover */
+  
+}
+ 
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th{
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+td {
+    border: 1.5px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #ffffff;
+    border: 1.5px solid #000000;
+}
+.birthplace{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.span-Birthplace{
+    font-family:'Times New Roman', Times, serif;
+    font-weight:lighter;
+}
+.DOB{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.dob-date{
+    font-family:'Times New Roman', Times, serif;
+    font-weight:lighter;
+}
+.Languages{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.spoken-languages{
+    font-family:'Times New Roman', Times, serif;
+    font-weight:lighter;
+}
+.name-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  position: relative;
+  display: inline-block;
+  color: #333; /* Text color */
+  text-decoration: none; /* Remove default underline */
+}
+
+.name-text::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of underline */
+  background-color: rgb(255, 255, 255); /* Color of underline */
+  transition: width 0.5s ease; /* Smooth transition */
+}
+
+.name-text:hover::before {
+  width: 100%; /* Slide to full width on hover */
+}
+
+.span-name{
+    font-family:'Times New Roman', Times, serif;
+    font-weight:lighter;
+}
+.email-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+  display: inline-block;
+  color: #333; /* Text color */
+  text-decoration: none; /* Remove default underline */
+}
+
+.email-text::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of underline */
+  background-color: rgb(255, 255, 255); /* Color of underline */
+  transition: width 0.5s ease; /* Smooth transition */
+}
+
+.email-text:hover::before {
+  width: 100%; /* Slide to full width on hover */
+}
+   
+.span-email{
+    font-family:'Times New Roman', Times, serif;
+    font-weight:lighter;
+    cursor: pointer;
+}
+.contact-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+position: relative;
+  display: inline-block;
+  color: #333; /* Text color */
+  text-decoration: none; /* Remove default underline */
+}
+
+.contact-text::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of underline */
+  background-color: rgb(255, 255, 255); /* Color of underline */
+  transition: width 0.5s ease; /* Smooth transition */
+}
+
+.contact-text:hover::before {
+  width: 100%; /* Slide to full width on hover */
+  
+}
+
+.span-contact{
+    font-family:'Times New Roman', Times, serif;
+    font-weight:lighter;
+    
+}
+.skills{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+  display: inline-block;
+  color: #333; /* Text color */
+  text-decoration: none; /* Remove default underline */
+}
+
+.skills::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of underline */
+  background-color: rgb(0, 0, 0); /* Color of underline */
+  transition: width 0.5s ease; /* Smooth transition */
+}
+
+.skills:hover::before {
+  width: 100%; /* Slide to full width on hover */
+  
+}
+.projects{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+  display: inline-block;
+  color: #333; /* Text color */
+  text-decoration: none; /* Remove default underline */
+}
+
+.projects::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of underline */
+  background-color: rgb(0, 0, 0); /* Color of underline */
+  transition: width 0.5s ease; /* Smooth transition */
+}
+
+.projects:hover::before {
+  width: 100%; /* Slide to full width on hover */
+  
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Optional: Set background color of the header */
+    z-index: 999; /* Ensure the header appears above other content */
+}
+
+.mainbody {
+    padding-top: 50px; /* Adjust this value to match the height of your fixed header */
+}
+
+.objective {
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+   </style>
+</head>
+<body>
+    
+    <div class="fixed-header">
+      
+    <section><div class="heading">PORTFOLIO</div> </section>
+</div>
+    <br>
+
+
+    <p class="name-text"> <i class="fa-regular fa-user"></i> Name :  <span class ='span-name'> Laxmikant Rohidas Sangnale </span></p><br>
+    <p class="email-text"><i class="fa-regular fa-envelope"></i> Email ID : <span class ='span-email'><a href="mailto:lrsangnale_b23@it.vjti.ac.in" 
+    target="_blank">lrsangnale_b23@it.vjti.ac.in </a></span></p> <br>
+    <p class="contact-text"> <i class="fa-solid fa-tty"></i> Contact No : <span class ='span-contact'> <a href="tel:+91 8767365987">******5987</a> </span></p>
+    <p class="linkedin"><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/laxmikant-sangnale"target="_blank">Explore more</a></p>
+    <p class="instagram"><i class="fa-brands fa-square-instagram"></i> <a href="https://www.instagram.com/lakshhh_23?igsh=a3Ixd2tsNzl5YW9z" target="_blank">Explore more</a></p>
+    <img class="profile-pic" src="Laksh-passportphoto.jpg" alt="applicant photo"><br>
+    <p class="objective"><i class="fa-solid fa-wand-magic-sparkles"></i> Objective: <p class ='span-objective'>As a first-year B.Tech student majoring in Computer Science, 
+    I am eager to embark on a journey of academic and personal growth. My goal is to develop a strong foundation in computer science principles and gain hands-on experience 
+    in programming, web development, and problem-solving. I am enthusiastic about exploring emerging technologies and contributing to innovative projects. Seeking opportunities 
+    to apply theoretical knowledge in real-world scenarios, I aim to become a versatile and skilled professional in the dynamic field of computer science.</p>
+    <table>
+     <p class="education "><i class="fa-solid fa-graduation-cap"></i> Education: </p>
+         <tr>
+             <th>Education Level</th>
+             <th>College/School</th>
+             <th>Specification</th>
+             <th>Location</th>
+             <th>Year of Completion</th>
+             <th>Board</th>
+             <th>Percentage/Grade</th>
+         </tr>
+         <tr>
+             <td>Bachelor's Degree</td>
+             <td>Veermata Jijabai Technological Institute</td>
+             <td>Information Technology</td>
+             <td>Mumbai, Maharashtra</td>
+             <td>2027</td>
+             <td>N/A</td>
+             <td>N/A</td>
+         </tr>
+         <tr>
+             <td>Higher Secondary</td>
+             <td>SM Joshi</td>
+             <td>science</td>
+             <td>Pune, Maharashtra</td>
+             <td>2023</td>
+             <td>HSC</td>
+             <td>75%</td>
+         </tr>
+         <tr>
+             <td>Secondary Education</td>
+             <td>Sonai English Medium High School</td>
+             <td>HSC Board</td>
+             <td>Pune, Maharashtra</td>
+             <td>2021</td>
+             <td>State Board</td>
+             <td>89.80%</td>
+         </tr>
+     </table>
+     <p class="extra-activity"><i class="fa-regular fa-wand-magic-sparkles"></i>Extracurricular Activities: </p>
+<ul>
+    <li>Marathon Runner</li>
+    <li>Exploring business ideas</li>
+    <li>Trading (Investor)</li>
+</ul>
+
+     <p class="projects"><i class="fa-brands fa-paypal"></i> Projects </p>
+     <ul>
+        <li>Mumbai Tourism website <a href="https://regal-kitsune-bff87e.netlify.app" target="blank"><i class="fa-solid fa-link"></i> </a></li>
+        <li>E-Commerce website <a href="https://stirring-alfajores-4e25e2.netlify.app" target="blank"><i class="fa-solid fa-link"></i> </a></li>
+     </ul>
+     <p class="skills"><i class="fa-regular fa-computer"></i> skills:</p>
+     <ul>
+         <li>Programming (C++)</li>
+         <li>Web Development (HTML, CSS , Javascript)</li>
+         <li>Problem Solving (DSA)</li>
+     </ul>
+     <div class="personal-info">
+     <p class="Personal-information"><i class="fa-regular fa-circle-user"></i> Personal information:</p> 
+     </div>
+      <ul>
+         <li><p class="birthplace">Birthplace: <span class="span-Birthplace"> Udgir, Maharashtra </span></p></li>
+         <li><p class="DOB">Date of Birth: <span class="dob-date">02/09/2005</span></p></li>
+         <li><p class="Languages">Languages Spoken: <span class="spoken-languages"> English / Hindi / marathi </span></p></li>
+     </ul>
+    </div>
+</div>
+
+</body>
+</html>
