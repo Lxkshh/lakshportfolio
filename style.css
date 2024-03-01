@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(background.jpg.webp);
+  }
+  
+  
+  
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 50px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .sidebar-icon {
+    font-size: 24px;
+    color:white;
+    cursor: pointer;
+    
+  }
+  .sidebar-data{
+    font-size: medium;
+   margin-bottom: 20px;
+   text-decoration: dashed;
+   font-family:Helvetica;
+   font-weight: bold;
+   margin-top: 8px;
+   
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .sidebar {
+    
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    animation: slideInFromLeft 2.0s ease-in-out;
+  
+  }
+  
+
+
+  
+  .header {
+    position: fixed;
+    left: -250px; /* Initially hide the header */
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #555;
+    color: white;
+    transition: left 0.3s ease;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header nav ul li {
+    padding: 10px;
+  }
+  
+  .header nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+  .main-div{
+    margin-top: 270px;
+    margin-left: 300px;
+    font-weight: bold;
+    font-family:Helvetica;
+    font-size:50px;
+    letter-spacing:0;
+    padding-top: 0px;
+    
+  }
+  
+  .main-div h1.animated.fadeInDown {
+    transition: all 0.3s ease;
+   
+  }
+  
+  .main-div h1.animated.fadeInDown:hover {
+    transform: translateY(10px);
+  }
+  
+  .rotate {
+    animation: blink 2.0s ease infinite alternate;
+    font-size:large;
+    color: rgb(226, 83, 83);
+    margin-top: 0px;
+    margin-left: 200px;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .main-div h1.animated.fadeInDown {
+    animation: floatDown 4.0s ease forwards;
+  }
+  
+  @keyframes floatDown {
+    from {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  @keyframes moveUpDown {
+    from {
+      transform: translateY(20px);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    padding-right: 1000px;
+
+  }
+  .laksh-png{
+    height:550px;
+    margin-top: 290px;
+    width: 300px;
+    size: 1000px;
+    margin-left: 300px;
+    
+  }
+  .hello{
+    font-size: x-large;
+    padding-top: 50px;
+    
+  }
+  .name{
+    padding-top: 0px;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hello {
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .button{
+    margin-left: 1090px;
+    margin-top: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: solid  #007bff;
+    background-color: white;
+    border-radius: 3px;
+    color: rgb(226, 83, 83) ;
+    font-weight: bold;
+  }
